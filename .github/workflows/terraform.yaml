@@ -1,0 +1,13 @@
+name: terraform-deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  linux:
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: Update config
+        run: |
+          terraform apply -auto-approve
