@@ -1,4 +1,4 @@
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
+from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove, Update
 from telegram.ext import Application, CommandHandler, CallbackContext, CallbackQueryHandler, ContextTypes, MessageHandler, ConversationHandler, filters
 # import re
 import logging
@@ -64,7 +64,8 @@ async def yes_police_report(update: Update, context: CallbackContext):
 
 async def analyse(update: Update, context: CallbackContext):
     # do ai stuff here
-    raise Exception("add ai stuff")
+
+    raise Exception(update.message.text)
     await update.message.reply_text("Alright, I get it! Or I would have if the AI worked")
 
 
