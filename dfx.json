@@ -1,9 +1,9 @@
 {
     "canisters": {
         "backend": {
-            "main": "../src/main.mo",
+            "main": "backend/src/main.mo",
             "type": "motoko",
-            "init_arg": "(vec {\"hi\"; \"bye\"}, vec {})"
+            "init_arg": "(vec {\"hi\"; \"bye\"}, vec {{1}; {0})"
         }
     },
     "output_env_file": ".env"
