@@ -141,7 +141,7 @@ questions = [
         warn=lambda x: genWarning(x, NO, 10)
     ), Question(  # 14
         "Has the credit term or delivery date lapsed?",
-        "Has it expired?",
+        "Has the deadline for the transaction passed?",
         warn=lambda x: genWarning(x, NO, 11)
     ), Question(  # 15
         "Were the goods delivered?",
