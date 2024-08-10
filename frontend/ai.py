@@ -19,7 +19,7 @@ class Question:
 
 
 def constructChoices() -> list[str]:
-    arr = ["Are you claiming as an individual?: Yes"]
+    arr = []
     for idx in range(questionsLength):
         for key, value in list(hardcode.items()):
             if idx > key:
@@ -228,4 +228,4 @@ def resetAI():
     global answers, accumulatedWarnings, hardcode
     answers = [None] * questionsLength
     accumulatedWarnings = []
-    hardcode = {12: "Is your claim related to profit or commission sharing?"}
+    hardcode = {-1: "Are you claiming as an individual?: Yes", 12: "Is your claim related to profit or commission sharing?: No"}
