@@ -219,13 +219,14 @@ warnings = [
 ]
 
 questionsLength = len(questions)
-answers = [None] * questionsLength
-accumulatedWarnings = []
-hardcode = {12: "Is your claim related to profit or commission sharing?"}
 
 
 def resetAI():
     global answers, accumulatedWarnings, hardcode
     answers = [None] * questionsLength
     accumulatedWarnings = []
-    hardcode = {-1: "Are you claiming as an individual?: Yes", 12: "Is your claim related to profit or commission sharing?: No"}
+    hardcode = {-1: "Are you claiming as an individual?: Yes",
+                12: "Is your claim related to profit or commission sharing?: No"}
+
+
+resetAI()
